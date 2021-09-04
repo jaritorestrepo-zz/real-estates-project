@@ -1,6 +1,7 @@
 # Bienes raíces
 
-Proyecto para visualizar la lista de propieades guardadas
+Proyecto para visualizar la lista de propieades guardadas.
+https://real-estates-project.herokuapp.com/
 
 ## Configuración
 
