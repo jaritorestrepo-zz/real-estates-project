@@ -1,69 +1,28 @@
-# real-estates-project
+# Bienes raíces
 
-## Build Setup
+Proyecto para visualizar la lista de propieades guardadas
+
+## Configuración
 
 ```bash
-# install dependencies
+# Instalar dependencias
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Ejecutar el servidor en modo desarrollador
 $ npm run dev
 
-# build for production and launch server
+# Crear un paquete para publicar en producción
 $ npm run build
 $ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Para obtener mas detalle, consulte la [documentación](https://nuxtjs.org).
 
-## Special Directories
+## Consideraciones especiales
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+Dada la estructura de las especificaciones de [diseño](https://www.figma.com/file/sW5Z8Y3pHim5OYIAAvRtd9/Prueba-T%C3%A9cnica?node-id=5%3A17) se requiero crear las siguientes adiciones a los estilos de Tailwind:
 
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+- Se adiciona los colores **jungle (_#012D26_)**, **jungle-gray (_#5B6866_)**, **caribbean (_#3ECFAF_)**, **md-blue (_#EBEDFF_)**, **blue-sky (_#3948FF_)** y **gray-light (_#E5F0EE_)**, ya que los mismo no se encuentran disponibles en las paletas de colores
+- Se adiciona los tamaños ancho porcentuales **5/4 (_125%_)** y **6/4 (_150%_)**, igualmente los espacios de margenes porcetuales y negativos **-1/4 (_-25%_)** y **-3/10 (_-30%_)** para poder manejar las ubicaciones de las imagenes en las tarjetas de imagenes, dado que dichos valores no se incluyen.
+- Se adiciona el tamaño de relleno porcentual \**15/100 (*15%\*) para ordenar la ubicación del numeral que indica las propiedades restantes en las tarjetas de imagenes, aplicando solo en las tarjetas que incluyen 3 o más imagenes, dado que valor no se incluye.
+- Se adiciona el tamaño máxiomo de ancho **18.25 (_18.25rem_)** para controlar el tamaño máximo de las tarjetas de imagenes, dado que dicho tamaño no se incluye.

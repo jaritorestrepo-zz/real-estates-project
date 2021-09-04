@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     fontFamily: {
       silka: ["Silka", "Helvetica", "Arial", "sans-serif"]
@@ -29,9 +29,5 @@ module.exports = {
     maxWidth: {
       "18.25": "18.25rem"
     }
-  },
-  variants: {
-    extend: {}
-  },
-  plugins: []
+  }
 };
